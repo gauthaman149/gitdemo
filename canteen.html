@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Dashboard</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+          <p id="datetime" class="datetime" style="color: orangered; background-color: aqua;"><div id="clock" style="background-color: aqua; color: orangered;">Time: --:--:--</div></p>
+        <h1>Canteen Orders</h1>
+        <h2>🍽️ Canteen Live Orders</h2>
+
+      <div class="count" id="pendingCount">🕒Pending Orders: 0</div>
+      <div class="count" id="deliveredCount">✅Delivered Orders: 0</div>
+      <div class="count" id="totalCount">📊Total Orders: 0</div>
+
+      <div class="buttons">
+        <button class="pending-btn" onclick="addPendingOrder()">Add Pending Order</button>
+        <button class="delivered-btn" onclick="addDeliveredOrder()">Add Delivered Order</button>
+        <button class="total-btn" onclick="addTotalOrder()">Add Total Order</button>
+      </div>
+
+        <p>List of current orders from students</p>
+
+        <div class="orders">
+            <div class="order-card">
+                <h3>Thirumaleshwaran (4-A)</h3>
+                <p>🧉Pongal</p>
+                <p>🥯Vada</p>
+                <p>Status: <span class="pending">⌛ Pending</span></p>
+                <button class="btn btn-danger btn-sm" style="background-color: red;">Mark as Pending</button>
+            </div>
+            <div class="order-card">
+                <h3>Shyleshwaran (6-B)</h3>
+                <p>🍵Tea</p>
+                <p>Status: <span class="delivered">✅ Delivered</span></p>
+                <button class="btn btn-success btn-sm">Mark as Delivered</button>
+            </div>
+            <div class="order-card">
+                <h3>Chandran (9-C)</h3>
+                <p>🍗Chicken 65</p>
+                <p>Status: <span class="pending">⌛ Pending</span></p>
+                <button class="btn btn-danger btn-sm" style="background-color: red;">Mark as Pending</button>
+            </div>
+            <div class="order-card">
+                <h3>Paul (10-D)</h3>
+                <p>🥠Samosa</p>
+                <p>🥦🌶️Cauliflower Chilli</p>
+                <p>Status: <span class="delivered">✅ Delivered</span></p>
+                <button class="btn btn-success btn-sm">Mark as Delivered</button>
+            </div>
+            <div class="order-card">
+                <h3>Sandhya (15-E)</h3>
+                <p>🥪Veg Sandwich</p>
+                <p>Status: <span class="pending">⌛ Pending</span></p>
+                <button class="btn btn-danger btn-sm" style="background-color: red;">Mark as Pending</button>
+            </div>
+            <div class="order-card">
+                <h3>Kalaivani (14-F)</h3>
+                <p>🍋🍹Lemon Juice</p>
+                <p>🍜Chicken Noodles</p>
+                <p>Status: <span class="delivered">✅ Delivered</span></p>
+                <button class="btn btn-success btn-sm">Mark as Delivered</button>
+            </div>
+            <div class="order-card">
+                <h3>Haroon (10-G)</h3>
+                <p>🍚Veg Fried Rice</p>
+                <p>🍄🍳Kaalan Fry</p>
+                <p>Status: <span class="pending">⌛ Pending</span></p>
+                <button class="btn btn-danger btn-sm" style="background-color: red;">Mark as Pending</button>
+            </div>
+            <div class="order-card">
+                <h3>Muthu Lakshmi (5-F)</h3>
+                <p>☕Coffee</p>
+                <p>🍞🥚🍳Bread Omelette</p>
+                <p>Status: <span class="delivered">✅ Delivered</span></p>
+                <button class="btn btn-success btn-sm">Mark as Delivered</button>
+            </div>
+
+
+            <h2>🔴 Live Canteen Orders</h2>
+            <div class="order-card">
+                <p><strong>Name:</strong>Manjunathan</p>
+                <p><strong>🍄🍳Kaalan Fry</strong></p>
+                <p><strong>Order At:</strong> <div id="countdown" style="background-color: darkgreen;"> <span id="hours"></span>h <span id="minutes"></span>m <span id="seconds"></span>s</div></p>
+                <p>Status: <span class="status">⌛ Pending</span></p>
+                <button class="btn btn-danger btn-sm">Mark as Pending</button>
+            </div>
+            <script src="js.js">
+               
+            </script>
+            <script src="canteen.js">
+
+            </script>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshmi Canteens</title>
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="download (90).jpeg" alt="Vijay"></div>
+    <div class="swiper-slide"><img src="download (91).jpeg" alt="Ajith"></div>
+    <div class="swiper-slide"><img src="download (92).jpeg" alt="Dhanush"></div>
+    <div class="swiper-slide"><img src="download (93).jpeg" alt="Surya"></div>
+    <div class="swiper-slide"><img src="download (94).jpeg" alt="Vikram"></div>
+  </div>
+</div>
+
+
+<div class="swiper-slide">
+  <h1>🎬 Lakshmi Canteens (Cinema hall 🎬🎞️🎟️🍿)</h1>
+  <p>Don't go to away canteens, now orders in your hand 🍽️📱</p>
+
+  <div class="buttons">
+    <button onclick="window.location.href='student.html'">Student Login</button>
+    <button onclick="window.location.href='canteen.html'">Canteen Login</button>
+    <button onclick="window.location.href='menu.html'">View Menu</button>
+  </div>
+</div>
+
+
+    <h2>🔐 Check Registration</h2>
+    <p>Enter your name:</p>
+
+    <input type="text" id="Name" placeholder="Your Name">
+    <button type="button" onclick="checkRegistration()">Check</button>
+
+    <p id="output" style="margin-top: 10px; color: lightgreen;"></p>
+    <div class="container">
+        <h1>Lakshmi Canteens</h1>
+        <p class="tagline">Don't go to away canteens,now orders in your hand from us  🎓📱🍽️📍</p>
+        <div class="buttons">
+            <button type="button" onclick="window.location.href='student.html'">Student Login</button>
+            <button type="button" onclick="window.location.href='canteen.html'">Canteen Login</button>
+            <button type="button" onclick="window.location.href='menu.html'">View Menu</button>
+            <button type="button" onclick="window.location.href='welcome.html'">⬅ Go back</button>
+        </div>
+        <marquee behavior="scroll" direction="left"><img src="leo-vijay-leo-movie-unscreen.gif"></marquee>
+        <marquee behavior="scroll" direction="right"><img src="ajith-cooking-cooking-unscreen.gif"></marquee>
+
+        <h2>🍱Thanks for your order!</h2>
+        <input type=checkbox id="orderedCheckbox" class="toggle"><label for="orderedCheckbox" class="toggle-label">
+            <span class="toggle-icon">ORDERED THE FOOD</span>
+            <div class="voucher-container" id="scratchContainer" onclick="revealVoucher(this)">
+  <div id="scratchContainer" class="cover-layer" style="display: none;">
+    <div id="vouncher-message">₹20 Discount</div>
+    <canvas id="scratchCanvas" width="300" height="150"></canvas>
+    <h3>Congratulations! 🎉</h3>
+    <p>You've won a discount 20% for your next time!🥳</p>&nbsp;&nbsp;&nbsp;
+    <p class="promo-code">SCRATCH2025</p>&nbsp;&nbsp;&nbsp;
+  </div>
+  <canvas id="scratchCanvas" width="300" height="150"></canvas>
+</div>
+    </div>
+     <footer style="background-color: lightblue; text-align: center;padding: 80px;border-radius: 20px;">
+            <p>Follow us on:<a href="https://www.instagram.com/ne.wentertainer/"> Instagram</a></p>
+            <p>Contact us: <a href="phone:+919677331669">+91 96773 31669</a></p>
+            <p>Email us: <a href="mail to:gauthaman1409@gmail.com">gauthaman1409@gmail.com</a></p>
+            <p>&copy; 2023 Lakshmi Canteens. All rights reserved.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="index.js">
+        
+        </script>
+</body>
+</html>
